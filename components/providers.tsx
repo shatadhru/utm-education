@@ -44,16 +44,13 @@ export function Providers({ children }: { children: ReactNode }) {
             usernamePrefix: "@",
             localization: { usernamePlaceholder: "username" }
           }),
-          magicLinkPlugin(),
+     
           apiKeyPlugin({ organization: true }),
           themePlugin({ useTheme }),
           multiSessionPlugin(),
           deleteUserPlugin(),
           adminPlugin(),
-          organizationPlugin({
-            slugPrefix: "@",
-            slug
-          })
+        
         ]}
         Link={Link}
       >

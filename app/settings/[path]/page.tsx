@@ -8,6 +8,7 @@ import { notFound, redirect } from "next/navigation"
 import { Settings } from "@/components/auth/settings/settings"
 import { auth } from "@/lib/auth"
 import { getQueryClient } from "@/lib/query-client"
+import Header from "@/components/shadcn-space/blocks/topbar-04/header";
 
 const validSettingsPaths = new Set([
   ...Object.values(viewPaths.settings),

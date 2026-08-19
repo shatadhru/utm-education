@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from '@/components/shadcn-space/blocks/topbar-04/header';
 
 function page() {
   return (
     <div>
-      <Header />
+      
     </div>
   )
 }

@@ -21,5 +21,11 @@ export const auth = betterAuth({
     admin({
       adminUserIds: ["6a848b9bed8db412d5a70f91"]
     }) 
-  ]
+  ],
+  trustedOrigins: [
+	"https://*.utmeducation.com", // All HTTPS subdomains
+	"http://localhost:*", // Any localhost port
+	"exp://**", // Expo development URLs
+	"myapp://", // Mobile app scheme
+]
 });
